@@ -429,14 +429,18 @@ footer {
       width: 100%;
     }
   }
-  .obriago-por-sejuntar {
+  .obrigado-por-sejuntar {
     margin: 40px 0px 60px;
+    background-color: #0c0102;
     h2 {
       text-align: center;
     }
-    ul {
+    ul li {
+      font-size: 4vw;
       width: max-content;
+      display: flex;
       gap: 32px;
+      animation: textoInfinito 5s infinite linear;
     }
   }
   footer {
