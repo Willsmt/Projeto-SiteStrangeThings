@@ -266,9 +266,6 @@ header .cabecalho {
     gap: 60px;
     font-size: 1vw;
   }
-  .cidadeInfinita2 {
-    display: none;
-  }
 }
 
 /* footer */
@@ -341,15 +338,6 @@ footer {
 @keyframes textoInfinito {
   100% {
     transform: translateX(-100%);
-  }
-}
-
-@keyframes cidadeI {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-30%);
   }
 }
 
@@ -441,81 +429,66 @@ footer {
     }
   }
   .obrigado-por-sejuntar {
-    height: max-content;
     h2 {
       text-align: center;
     }
-    .cidadeInfinita {
-      display: flex;
+    ul {
       width: max-content;
       gap: 32px;
-      animation: cidadeI 10s infinite linear;
-      font-size: 16px;
-    }
-    .cidadeInfinita-wrapper {
-      animation: cidadeI 10s infinite linear;
-      display: flex;
-
-      .cidadeInfinita {
-        display: flex;
-        width: max-content;
-        gap: 32px;
-
-        font-size: 16px;
-      }
+      animation: textoInfinito 10s infinite linear;
     }
   }
-}
-footer {
-  padding-top: 40px;
-  .conteudo-footer {
-    padding: 4vw;
-    flex-direction: column;
-    .titulo-footer {
-      width: 100%;
-      h2,
-      h3 {
-        text-align: center;
-      }
-      h3 {
-        font-size: 24px;
-        font-weight: 500;
-        letter-spacing: 4px;
-      }
-      h2 {
-        font-size: 12vw;
-        font-family: "Benguiat", sans-serif;
-      }
-    }
-
-    .secoesfooter {
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: start;
-      .redes-sociais {
+  footer {
+    padding-top: 40px;
+    .conteudo-footer {
+      padding: 4vw;
+      flex-direction: column;
+      .titulo-footer {
         width: 100%;
-        display: flex;
+        h2,
+        h3 {
+          text-align: center;
+        }
+        h3 {
+          font-size: 24px;
+          font-weight: 500;
+          letter-spacing: 4px;
+        }
+        h2 {
+          font-size: 12vw;
+          font-family: "Benguiat", sans-serif;
+        }
+      }
+
+      .secoesfooter {
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin: 40px 0px 32px;
-      }
-      .institucional {
-        width: 40%;
-      }
-      .parceiros-midia {
-        width: 50%;
-        img {
+        align-items: start;
+        .redes-sociais {
           width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin: 40px 0px 32px;
+        }
+        .institucional {
+          width: 40%;
+        }
+        .parceiros-midia {
+          width: 50%;
+          img {
+            width: 100%;
+          }
         }
       }
     }
-  }
-  .logotipos-footer {
-    margin-top: 40px;
-  }
+    .logotipos-footer {
+      margin-top: 40px;
+    }
 
-  .experience-footer h3 {
-    font-size: 20vw;
+    .experience-footer h3 {
+      font-size: 20vw;
+    }
   }
 }
