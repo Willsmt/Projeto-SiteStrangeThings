@@ -341,6 +341,15 @@ footer {
   }
 }
 
+@keyframes cidadeI {
+  40% {
+    transform: translateX(100%);
+  }
+  60% {
+    transform: translateX(-100%);
+  }
+}
+
 /* Media QUERIES */
 
 @media (max-width: 1500px) {
@@ -470,7 +479,7 @@ footer {
     ul {
       width: max-content;
       gap: 32px;
-      animation: textoInfinito 10s infinite linear;
+      animation: cidadeI 10s infinite linear;
       li {
         font-size: 16px;
       }
