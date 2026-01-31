@@ -342,10 +342,13 @@ footer {
 }
 
 @keyframes cidadeI {
-  40% {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
     transform: translateX(100%);
   }
-  60% {
+  100% {
     transform: translateX(-100%);
   }
 }
@@ -479,7 +482,7 @@ footer {
     ul {
       width: max-content;
       gap: 32px;
-      animation: cidadeI 10s infinite linear;
+      animation: cidadeI 20s linear infinite alternate;
       li {
         font-size: 16px;
       }
