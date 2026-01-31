@@ -1,0 +1,495 @@
+/* geral */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Benguiat";
+  src: url(./font/Benguiat\ Bold.ttf);
+}
+
+html,
+body {
+  overflow-x: hidden !important;
+}
+body {
+  background-color: #0c0102;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "Poppins", sans-serif;
+}
+button {
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+section {
+  width: 100%;
+  display: flex;
+  padding: 7vw;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Pre Loader */
+#preLoader {
+  width: 100%;
+  height: 100vh;
+  background-color: #0c0102;
+  position: fixed;
+  display: flex;
+  /*  alinha no centro na vertical*/
+  justify-content: center;
+  /* alinha no centro na horizontal */
+  align-items: center;
+  svg {
+    width: 40vw;
+    height: auto;
+
+    path {
+      fill: rgba(168, 19, 19, 0.364);
+      stroke: rgb(168, 19, 19);
+      stroke-dasharray: 1200px;
+      stroke-dashoffset: 1200px;
+    }
+  }
+}
+/* header */
+header .cabecalho {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 4vw;
+  position: absolute;
+  z-index: 9;
+}
+/* section hero */
+.hero {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7vw 7vw 7vw;
+  background-position: 50% 0%;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+
+  picture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      object-fit: cover;
+    }
+  }
+
+  .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+  }
+
+  .hero-direita,
+  .hero-esquerda {
+    width: 30%;
+    z-index: 3;
+  }
+  .hero-esquerda {
+    h3 {
+      font-size: 24px;
+      font-weight: 500;
+      letter-spacing: 4px;
+    }
+    h1 {
+      font-size: 3.8vw;
+      font-family: "Benguiat", sans-serif;
+    }
+  }
+  .hero-direita {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: end;
+    p {
+      font-size: 2vw;
+      margin-bottom: 32px;
+    }
+    button {
+      background-color: transparent;
+      color: white;
+      font-size: 16px;
+      display: flex;
+      gap: 12px;
+      border: none;
+      outline: none;
+      padding: 16px 0px;
+      border-bottom: 1px solid white;
+    }
+  }
+}
+
+.hero:before {
+  content: "";
+  background: linear-gradient(180deg, rgba(12, 1, 2, 0) 0%, #0c0102 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+}
+/* section cidade */
+.bg-monstro {
+  background-image: url(./images/bg-sec2.webp);
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+  position: relative;
+  background-color: #0c0102;
+}
+.escolha-sua-cidade {
+  flex-direction: column;
+  .parteinicial-escolhacidade {
+    display: flex;
+    justify-content: space-between;
+    padding: 0vw 4vw;
+    align-items: center;
+  }
+  button {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    gap: 12px;
+    border: none;
+    outline: none;
+    padding: 16px 0px;
+    border-bottom: 1px solid white;
+  }
+  .cards {
+    margin-top: 52px;
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+      background-image: url(./images/sidney.png);
+      width: 32%;
+      aspect-ratio: 16/9;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    /* .card2 {
+      background-image: url(./images/mexico.png);
+      width: 32%;
+      aspect-ratio: 16/9;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    .card3 {
+      background-image: url(./images/yas-island.png);
+      width: 32%;
+      aspect-ratio: 16/9;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      padding: 20px;
+    } */
+
+    .card:nth-child(2) {
+      background-image: url(./images/mexico.png);
+    }
+    .card:nth-child(3) {
+      background-image: url(./images/yas-island.png);
+    }
+  }
+}
+
+/* section experiencia */
+
+.experiencias {
+  flex-direction: column;
+  .logotipos-experiencias {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  .comentatios-experiencias {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 62px;
+  }
+  .depoimento {
+    width: 31%;
+  }
+}
+
+/* section obrigado */
+.obrigado-por-sejuntar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0c0102;
+  position: relative;
+  z-index: 2;
+  h2 {
+    margin-bottom: 40px;
+  }
+  .cidadeInfinita {
+    width: max-content;
+    display: flex;
+    gap: 60px;
+    font-size: 1vw;
+  }
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./images/bg-footer.webp);
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  .conteudo-footer {
+    display: flex;
+    width: 100%;
+    padding: 7vw;
+    .titulo-footer {
+      width: 30%;
+      h3 {
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 4px;
+      }
+      h2 {
+        font-size: 3.8vw;
+        font-family: "Benguiat", sans-serif;
+      }
+    }
+    .secoesfooter {
+      display: flex;
+      flex: 1;
+      justify-content: end;
+      gap: 6%;
+      align-items: end;
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+    .redes-sociais {
+      ul {
+        display: flex;
+        gap: 6%;
+      }
+    }
+  }
+  .logotipos-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4vw;
+  }
+
+  .experience-footer {
+    width: max-content;
+    display: flex;
+    h3 {
+      color: rgb(190, 189, 189);
+      font-size: 12vw;
+      font-family: "Benguiat", sans-serif;
+      mix-blend-mode: color-dodge;
+      animation: textoInfinito 10s infinite linear;
+      padding: 3vw;
+    }
+  }
+}
+
+@keyframes textoInfinito {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Media QUERIES */
+
+@media (max-width: 1500px) {
+  .escolha-sua-cidade {
+    padding: 4vw;
+  }
+}
+
+@media (max-width: 1400px) {
+  .escolha-sua-cidade .cards {
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 4vw;
+  }
+  h2 {
+    font-size: 6vw;
+  }
+  header h2 {
+    font-size: 28px;
+  }
+  .hero {
+    flex-direction: column;
+    padding: 20% 4vw 0;
+    .hero-esquerda,
+    .hero-direita {
+      width: 100%;
+    }
+    .hero-esquerda {
+      h3,
+      h1 {
+        text-align: center;
+      }
+      h1 {
+        font-size: 10vw;
+      }
+    }
+    .hero-direita {
+      align-items: start;
+      p {
+        font-size: 5.5vw;
+        text-align: start;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .escolha-sua-cidade {
+    margin-top: 80px;
+    .parteinicial-escolhacidade button {
+      display: none;
+    }
+    .cards {
+      margin-top: 20px;
+      .card {
+        margin-bottom: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: start;
+      }
+    }
+  }
+  .experiencias {
+    .logotipos-experiencias {
+      img:nth-child(1) {
+        width: 20%;
+      }
+      img:nth-child(2) {
+        width: 40%;
+      }
+      img:nth-child(3) {
+        width: 20%;
+      }
+    }
+  }
+  .comentatios-experiencias {
+    flex-direction: column;
+    gap: 48px;
+    .depoimento {
+      width: 100%;
+    }
+  }
+  .obriago-por-sejuntar {
+    margin: 40px 0px 60px;
+    h2 {
+      text-align: center;
+    }
+    ul {
+      width: max-content;
+      gap: 32px;
+    }
+  }
+  footer {
+    padding-top: 40px;
+    .conteudo-footer {
+      padding: 4vw;
+      flex-direction: column;
+      .titulo-footer {
+        width: 100%;
+        h2,
+        h3 {
+          text-align: center;
+        }
+        h3 {
+          font-size: 24px;
+          font-weight: 500;
+          letter-spacing: 4px;
+        }
+        h2 {
+          font-size: 12vw;
+          font-family: "Benguiat", sans-serif;
+        }
+      }
+
+      .secoesfooter {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: start;
+        .redes-sociais {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin: 40px 0px 32px;
+        }
+        .institucional {
+          width: 40%;
+        }
+        .parceiros-midia {
+          width: 50%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .logotipos-footer {
+      margin-top: 40px;
+    }
+
+    .experience-footer h3 {
+      font-size: 20vw;
+    }
+  }
+}
