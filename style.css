@@ -471,6 +471,9 @@ footer {
       width: max-content;
       gap: 32px;
       animation: textoInfinito 10s infinite linear;
+      li {
+        font-size: 16px;
+      }
     }
   }
   footer {
