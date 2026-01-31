@@ -102,4 +102,3 @@ Este projeto é **apenas para fins educacionais**.
 Stranger Things e Netflix são marcas registradas de seus respectivos proprietários.
 
 ---
-É só me dizer 😉
