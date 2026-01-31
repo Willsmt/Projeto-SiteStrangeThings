@@ -90,6 +90,11 @@ cd stranger-things-experience
    ou utilize uma extensão como **Live Server** no VS Code.
 
 ---
+## 📸 Preview
+
+> https://projetostrangerthings.vercel.app/
+
+---
 
 ## ⚠️ Aviso Legal
 
